@@ -5,24 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>トップページ</title>
   <link rel="stylesheet" href="css/index.css">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caprasimo&family=Yuji+Syuku&display=swap" rel="stylesheet"></head>
 <body>
   <header class="header">
     <nav class="nav">
       <ul>
-        <li><a href="Home.html"></a></li>
-        <li><a href="About.html"></a></li>
-        <li><a href="Works.html"></a></li>
-        <li><a href="Contact.html"></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="top_img">
+      <img src="img/my_picture.png" alt="Ren Matsuoka">
+    </div>
     <div class="top" id="home">
       <div class="top_text">
-        <h1>Potfolio <br><span>Ren Matsuoka</span></h1>
+        <h1>Potfolio <span>Ren_Matsuoka</span></h1>
         <p class="designer">Web Designer</p>
       </div>
     </div>
   </header>
-  
+
+    <!-- ===== About ===== -->
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        <span>松岡 蓮</span><br>
+        大阪府東大阪市在住。<br>
+        2005年生まれ、高校卒業後専門学校に入りWeb制作について<br>
+        学びました。「やると決めたら、最後までやり切る。」を<br>
+        モットーにWebデザイナーになるために就職活動中です。
+      </p>
+      <div class="btn_wrap">
+        <a href="#" class="btn">VIEW MORE</a>
+      </div>
+    </section>
+  </div>
+
+    <!-- ===== Skill ===== -->
+    <section id="skill" class="skill">
+      <div class="container">
+        <h2>Skill</h2>
+        <div class="skill-box">
+          <div class="skill-item">
+            <h3>Webデザイン</h3>
+            <p>Webサイトからチラシ、グラフィックまで幅広く対応可能です。Illustrator / Photoshop / Figma を使用。</p>
+          </div>
+          <div class="skill-item">
+            <h3>コーディング</h3>
+            <p>HTML / CSS を用いたデザイン実装が可能です。JavaScript による動的処理も対応可能です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- ===== Works ===== -->
+      <section id="works" class="works">
+        <h2>Works</h2>
+        <div class="works-grid">
+          <div class="work-item"></div>
+          <div class="work-item"></div>
+          <div class="work-item"></div>
+          <div class="work-item"></div>
+          <div class="work-item"></div>
+          <div class="work-item"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Contact ===== -->
+    <footer class="footer">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><a href="mailto:ren0714matsuoka@gmail.com">ren0714matsuoka@gmail.com</a></p>
+        <div class="copy">
+          <p>&copy; 2025 Ren Matsuoka</p>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
