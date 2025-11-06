@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +11,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caprasimo&family=Yuji+Syuku&display=swap" rel="stylesheet"></head>
 <body>
   <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+    </div>
     <nav class="nav">
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  </header>
+  <div id="header" class="main_wrap">
     <div class="top_img">
       <img src="img/my_picture.png" alt="Ren Matsuoka">
     </div>
     <div class="top" id="home">
       <div class="top_text">
-        <h1>Potfolio <span>Ren_Matsuoka</span></h1>
+        <h1>Portfolio <span>Ren_Matsuoka</span></h1>
         <p class="designer">Web Designer</p>
       </div>
     </div>
-  </header>
-
+  </div>
+    
     <!-- ===== About ===== -->
   <div class="container">
     <section id="about" class="about">
       <h2>About</h2>
-      <p>
-        <span>松岡 蓮</span><br>
-        大阪府東大阪市在住。<br>
-        2005年生まれ、高校卒業後専門学校に入りWeb制作について<br>
-        学びました。「やると決めたら、最後までやり切る。」を<br>
-        モットーにWebデザイナーになるために就職活動中です。
-      </p>
+      <div class="about_content">
+        <div class="my_introduction">
+          <p>
+            <span>松岡 蓮</span><br>
+            大阪府東大阪市在住。<br>
+            2005年生まれ、高校卒業後専門学校に入りWeb制作について<br>
+            学びました。「やると決めたら、最後までやり切る。」を<br>
+            モットーにWebデザイナーになるために就職活動中です。
+          </p>
+        </div>
+        <div class="my_picture">
+          <img src="img/my_introduction.png" alt="松岡蓮写真">
+        </div>
+      </div>
       <div class="btn_wrap">
-        <a href="#" class="btn">VIEW MORE</a>
+          <a href="view_more.html" class="btn">VIEW MORE</a>
       </div>
     </section>
   </div>
@@ -51,14 +63,32 @@
     <section id="skill" class="skill">
       <div class="container">
         <h2>Skill</h2>
-        <div class="skill-box">
-          <div class="skill-item">
-            <h3>Webデザイン</h3>
-            <p>Webサイトからチラシ、グラフィックまで幅広く対応可能です。Illustrator / Photoshop / Figma を使用。</p>
+        <div class="skill_box">
+          <div class="skill_item">
+            <div class="title">
+              <img src="img/design.png" alt="デザイン">
+              <h3>Webデザイン</h3>
+            </div>
+            <p>Webサイトやバナー、グラフィック等を作成できます。<br>
+                ユーザが使用するにあたっていかに操作しやすく見やす<br>
+                いか、ストレスなく利用できるように心がけています。</p>
+                <div class="can">
+                  <img src="img/pen.png" alt="ぺん" width="20px" height="20px">
+                  <p>Illustrator / Photoshop / figma</p>
+                </div>
           </div>
-          <div class="skill-item">
-            <h3>コーディング</h3>
-            <p>HTML / CSS を用いたデザイン実装が可能です。JavaScript による動的処理も対応可能です。</p>
+          <div class="skill_item">
+            <div class="title">
+              <img src="img/code.png" alt="コード">
+              <h3>コーディング</h3>
+            </div>
+            <p>HTML / CSSを用いてデザインを再現することができ、<br>
+                Javascriptでは色々なデザインで動きをつけるときに<br>
+                再現できるように日々練習を重ねています。</p>
+                <div class="can">
+                  <img src="img/pen.png" alt="ぺん" width="20px" height="20px">
+                  <p>HTML / CSS / Javascript</p>
+                </div>
           </div>
         </div>
       </div>
@@ -68,19 +98,59 @@
       <!-- ===== Works ===== -->
       <section id="works" class="works">
         <h2>Works</h2>
-        <div class="works-grid">
-          <div class="work-item"></div>
-          <div class="work-item"></div>
-          <div class="work-item"></div>
-          <div class="work-item"></div>
-          <div class="work-item"></div>
-          <div class="work-item"></div>
+        <div class="works_grid">
+          <div class="work_web">
+            <div class="work_item">
+              <div class="web_img">
+                <a href="portfolio.html"><img src="img/portfolio.png" alt="ポートフォリオ"></a>
+              </div>
+              <p>#webサイト</p>
+              <h3>松岡 蓮・ポートフォリオサイト</h3>
+            </div>
+            <div class="work_item">
+              <div class="web_img">
+                <a href="respos.html"><img src="img/respos.png" alt="respos"></a>
+              </div>
+              <p>#webアプリ</p>
+              <h3>RestrantPost・マップ飲食店アプリ</h3>
+            </div>
+            <div class="work_item">
+              <div class="web_img">
+                <a href="respos_lp.html"><img src="img/respos_lp.png" alt="resposLP"></a>
+              </div>
+              <p>#LPサイト</p>
+              <h3>RestrantPost・LPサイト</h3>
+            </div>
+          </div>
+          <div class="work_baner">
+            <div class="work_item">
+              <div class="work_img">
+                <a href="kaguzakka.html"><img src="img/ecc_kaguzakka.png" alt="ecc_kaguzakka"></a>
+              </div>
+              <p>#バナー</p>
+              <h3>ECC-kaguzakkaのバナー</h3>
+            </div>
+            <div class="work_item">
+              <div class="work_img">
+                <a href="ajio.html"><img src="img/agio.png" alt="ajio"></a>
+              </div>
+              <p>#バナー</p>
+              <h3>インテリアと女性者の洋服のバナー</h3>
+            </div>
+            <div class="work_item">
+              <div class="work_img">
+                <a href="cake.html"><img src="img/cake.png" alt="cake"></a>
+              </div>
+              <p>#バナー</p>
+              <h3>空想上のケーキのバナー</h3>
+            </div>
+          </div>
         </div>
       </section>
     </div>
 
     <!-- ===== Contact ===== -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="container">
         <h2>Contact</h2>
         <p><a href="mailto:ren0714matsuoka@gmail.com">ren0714matsuoka@gmail.com</a></p>

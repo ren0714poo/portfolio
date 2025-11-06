@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* header */
+.header {
+  position: fixed;          /* ← スクロールしても固定 */
+  top: 0;                   /* 画面の最上部に固定 */
+  left: 0;
+  width: 100%;              /* 横幅いっぱい */
+  display: flex;
+  align-items: center;
+  height: 100px;             /* 固定高さ */
+  overflow: hidden;
+  padding-right: 10px;      /* ナビを右寄せ */
+}
+
+.logo{
+  margin-left: 100px;
+}
+
+.container {
+    width: 80%;   /* 任意の幅 */
+    margin: 0 auto;  /* 上下は0、左右は自動で中央寄せ */
+}
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.tag {
+  color: #e36c0a;
+  font-weight: bold;
+}
+
+.work_detail h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.work_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+/* 左の画像部分 */
+.work_image {
+  width: 350px;
+  height: 350px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.work_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 右の情報欄 */
+.work_info {
+  flex: 1;
+}
+
+.work_info dl {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10px 20px;
+}
+
+.work_info dt {
+  color: #e36c0a;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.work_info dd {
+  margin: 0;
+  line-height: 50px;
+}
+
+/* ===== Description Section ===== */
+.work_description {
+  margin-top: 100px;
+}
+
+.work_description h2 {
+  color: #e36c0a;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/* Contact */
+.footer{
+  height: 400px;
+  width: 100%;
+  background: #fdf2cc;
+  color: #e36c0a;
+  font-family: "Archivo Black", sans-serif;  
+  margin-top: 130px;
+
+}
+
+.footer h2{
+  padding-top: 70px;
+  font-size: 48px;
+}
+
+.footer a{
+  font-size: 36px;
+  color: #e36c0a;
+}
+
+.copy{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .top_img,
+  .top {
+    flex: unset;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .top {
+    align-items: center;
+    text-align: center;
+  }
+}
