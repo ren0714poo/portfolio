@@ -8,22 +8,21 @@ html, body {
 
 /* header */
 .header {
-  position: fixed;          /* ← スクロールしても固定 */
-  top: 0;                   /* 画面の最上部に固定 */
+  position: fixed;        
+  top: 0;                   
   left: 0;
-  width: 100%;              /* 横幅いっぱい */
+  width: 100%;             
   display: flex;
   align-items: center;
-  height: 100px;             /* 固定高さ */
+  height: 100px;             
   overflow: hidden;
-  padding-left: 10px;      /* ナビを右寄せ */
+  padding-left: 10px;     
 }
 
 .logo{
   margin-left: 100px;
 }
 
-/* ナビゲーションは絶対位置に */
 .nav {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* 初期状態では影なし */
   position: static;
