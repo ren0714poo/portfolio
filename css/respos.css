@@ -85,8 +85,10 @@ html, body {
 }
 
 .work_info dd {
-color: #333;  
-line-height: 50px;
+  a{
+    color: #333;  
+  }
+  line-height: 50px;
 }
 
 /* ===== Description Section ===== */
