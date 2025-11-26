@@ -85,8 +85,8 @@ html, body {
 }
 
 .work_info dd {
-  margin: 0;
-  line-height: 50px;
+color: #333;  
+line-height: 50px;
 }
 
 /* ===== Description Section ===== */
