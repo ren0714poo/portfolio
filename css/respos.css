@@ -9,15 +9,15 @@ html, body {
 
 /* header */
 .header {
-  position: fixed;          /* ← スクロールしても固定 */
-  top: 0;                   /* 画面の最上部に固定 */
+  position: fixed;         
+  top: 0;                   
   left: 0;
-  width: 100%;              /* 横幅いっぱい */
+  width: 100%;             
   display: flex;
   align-items: center;
-  height: 100px;             /* 固定高さ */
+  height: 100px;             
   overflow: hidden;
-  padding-right: 10px;      /* ナビを右寄せ */
+  padding-right: 10px;      
 }
 
 .logo{
