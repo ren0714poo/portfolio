@@ -140,7 +140,6 @@ html, body {
   width: 350px;
   height: 320px;
   border-radius: 20px;
-  flex-wrap: wrap;
 }
 
 .about a{
