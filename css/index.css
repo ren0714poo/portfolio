@@ -115,7 +115,7 @@ html, body {
 
 .about_content{
   display: flex;
-  gap: 330px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
