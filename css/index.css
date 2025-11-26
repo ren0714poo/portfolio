@@ -38,6 +38,7 @@ html, body {
   gap: 20px;
 }
 
+
 .nav a {
   text-decoration: none;
   color: #e36c0a;
@@ -46,7 +47,7 @@ html, body {
 }
 
 .nav a:hover{
-  box-shadow: 0 8px 20px rgba(255, 97, 35, 0.3); /* ← ホバー時に影が出る */
+  text-shadow: 0 8px 20px rgba(255, 97, 35, 0.3); /* ← ホバー時に影が出る */
   transform: translateY(-3px);            /* ← 少し浮き上がる演出 */
 }
 
@@ -115,6 +116,7 @@ html, body {
 
 .about_content{
   display: flex;
+  gap: 330px;
   flex-wrap: wrap;
 }
 
@@ -136,7 +138,6 @@ html, body {
 
 .my_picture img{
   display: flex;
-  margin-left: 110px;
   width: 350px;
   height: 320px;
   border-radius: 20px;
