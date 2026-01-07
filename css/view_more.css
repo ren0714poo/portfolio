@@ -7,27 +7,25 @@ html, body {
 
 }
 
-/* header */
 .header {
-  position: fixed;          /* ← スクロールしても固定 */
-  top: 0;                   /* 画面の最上部に固定 */
+  position: fixed;         
+  top: 0;                   
   left: 0;
-  width: 100%;              /* 横幅いっぱい */
+  width: 100%;             
   display: flex;
   align-items: center;
-  height: 100px;             /* 固定高さ */
+  height: 100px;            
   overflow: hidden;
-  padding-right: 10px;      /* ナビを右寄せ */
+  padding-right: 10px;     
 }
 
 .logo{
   margin-left: 100px;
 }
 
-/* ナビゲーションは絶対位置に */
 .nav {
   transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* 初期状態では影なし */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
   position: static;
   position: absolute;
   top: 20px;
@@ -35,8 +33,8 @@ html, body {
 }
 
 .nav a:hover{
-  box-shadow: 0 8px 20px rgba(255, 97, 35, 0.3); /* ← ホバー時に影が出る */
-  transform: translateY(-3px);            /* ← 少し浮き上がる演出 */
+  box-shadow: 0 8px 20px rgba(255, 97, 35, 0.3); 
+  transform: translateY(-3px);           
 }
 
 .nav ul {
@@ -52,8 +50,8 @@ html, body {
 }
 
 .container {
-    width: 80%;   /* 任意の幅 */
-    margin: 0 auto;  /* 上下は0、左右は自動で中央寄せ */
+    width: 80%;   
+    margin: 0 auto;  
 }
 
 
@@ -64,7 +62,6 @@ html, body {
   overflow: hidden;
 }
 
-/* タイトル */
 .about_title {
   font-family: "Archivo Black", sans-serif;
   color: #e36c0a;
@@ -73,14 +70,12 @@ html, body {
   margin-left: 260px;
 }
 
-/* レイアウト */
 .about_wrapper {
   display: flex;
   justify-content: space-evenly;
   gap: 60px;
 }
 
-/* テキスト部分 */
 .about_text {
   color: #333;
   line-height: 2;
@@ -102,7 +97,6 @@ html, body {
   font-size: 16px;
 }
 
-/* ===== Strengths ===== */
 
 .strengths_title {
   font-family: "Archivo Black", sans-serif;
@@ -119,7 +113,6 @@ html, body {
   gap: 60px;
 }
 
-/* 左の画像部分 */
 .strengths_img img {
   width: 350px;
   height: 320px;
@@ -127,7 +120,6 @@ html, body {
   border-radius: 20px;
 }
 
-/* 右側テキスト部分 */
 .strengths_text {
   max-width: 600px;
   gap: 80px;
@@ -154,13 +146,11 @@ html, body {
   line-height: 2;
 }
 
-/* 区切り線を自然に */
 .strength_item:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 30px;
 }
 
-/* ちょっとした動き */
 .strength_item:hover {
   transform: translateY(-4px);
   transition: all 0.5s ease;
@@ -175,7 +165,6 @@ html, body {
 
 
 
-/* Contact */
 .footer{
   height: 400px;
   width: 100%;
@@ -203,7 +192,6 @@ html, body {
 }
 
 
-/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;

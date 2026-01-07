@@ -7,17 +7,16 @@ html, body {
     color: #333;
 }
 
-/* header */
 .header {
-  position: fixed;          /* ← スクロールしても固定 */
-  top: 0;                   /* 画面の最上部に固定 */
+  position: fixed;         
+  top: 0;                  
   left: 0;
-  width: 100%;              /* 横幅いっぱい */
+  width: 100%;              
   display: flex;
   align-items: center;
-  height: 100px;             /* 固定高さ */
+  height: 100px;             
   overflow: hidden;
-  padding-right: 10px;      /* ナビを右寄せ */
+  padding-right: 10px;      
 }
 
 .logo{
@@ -25,8 +24,8 @@ html, body {
 }
 
 .container {
-    width: 80%;   /* 任意の幅 */
-    margin: 0 auto;  /* 上下は0、左右は自動で中央寄せ */
+    width: 80%;   
+    margin: 0 auto; 
 }
 
 .portfolio {
@@ -52,7 +51,6 @@ html, body {
   gap: 80px;
 }
 
-/* 左の画像部分 */
 .work_image {
   width: 350px;
   height: 350px;
@@ -67,7 +65,6 @@ html, body {
   object-fit: cover;
 }
 
-/* 右の情報欄 */
 .work_info {
   flex: 1;
 }
@@ -89,7 +86,6 @@ html, body {
   line-height: 50px;
 }
 
-/* ===== Description Section ===== */
 .work_description {
   margin-top: 100px;
 }
@@ -109,7 +105,6 @@ html, body {
 
 
 
-/* Contact */
 .footer{
   height: 400px;
   width: 100%;
@@ -137,7 +132,6 @@ html, body {
 }
 
 
-/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
